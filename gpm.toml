@@ -1,0 +1,41 @@
+version = 1
+
+[[game]]
+catalog = "official"
+catalog_source = "built in"
+
+[game.recipe]
+schema = 1
+game = "freedoom"
+name = "Freedoom"
+aliases = ["freedoom: phase 1", "freedoom: phase 2", "doom"]
+release = "0.13.0"
+indexer = "freedoom"
+owner = "Contributors to the Freedoom project"
+owner_id = "freedoom-project"
+owner_status = "active"
+license = "BSD-3-Clause"
+clearance = "cleared"
+description = "A free game compatible with Doom engines, made by a community of artists"
+
+[[game.recipe.source]]
+id = "freedoom1"
+file = "freedoom1.wad"
+size = 28795076
+sha256 = "7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d"
+
+[[game.recipe.source.place]]
+kind = "url"
+url = "https://github.com/freedoom/freedoom/releases/download/v0.13.0/freedoom-0.13.0.zip"
+unpack = ["zip:freedoom-0.13.0/freedoom1.wad"]
+
+[[game.recipe.source]]
+id = "freedoom2"
+file = "freedoom2.wad"
+size = 28787748
+sha256 = "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+
+[[game.recipe.source.place]]
+kind = "url"
+url = "https://github.com/freedoom/freedoom/releases/download/v0.13.0/freedoom-0.13.0.zip"
+unpack = ["zip:freedoom-0.13.0/freedoom2.wad"]
